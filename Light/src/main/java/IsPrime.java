@@ -1,0 +1,38 @@
+
+public class IsPrime {
+	public boolean prime(int num)
+	{
+		if(num<1) {
+			return false ;}
+		else
+		{
+			if(num==2)
+			{
+				return true;
+			}
+		}
+		for(int i=2;i<num;i++)
+		{
+			if(num%i==0)
+			{
+				return false;
+			}
+		}
+		return true;
+		
+	}
+
+	public static void main(String[] args) {
+		IsPrime s=new IsPrime();
+		int num=5;
+		if(s.prime(num))
+		{
+			System.out.print(num + " is a prime number");
+		}
+		else {
+			System.out.print(num + " is not a prime number");
+		}
+		
+	}
+
+}
